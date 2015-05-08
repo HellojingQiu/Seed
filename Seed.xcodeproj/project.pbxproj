@@ -14,6 +14,11 @@
 		2893C1871AFB157D008E5934 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2893C1861AFB157D008E5934 /* Images.xcassets */; };
 		2893C18A1AFB157D008E5934 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2893C1881AFB157D008E5934 /* LaunchScreen.xib */; };
 		2893C1961AFB157D008E5934 /* SeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1951AFB157D008E5934 /* SeedTests.m */; };
+		2893C1A21AFB15BA008E5934 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1A11AFB15BA008E5934 /* SignUpViewController.m */; };
+		2893C1A51AFB15D1008E5934 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1A41AFB15D1008E5934 /* SignInViewController.m */; };
+		2893C1A81AFB15E8008E5934 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1A71AFB15E8008E5934 /* ChangePasswordViewController.m */; };
+		2893C1AF1AFB3354008E5934 /* ZWIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1AE1AFB3354008E5934 /* ZWIntroductionViewController.m */; };
+		2893C1B51AFB7A0F008E5934 /* Lantinghei.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 2893C1B41AFB7A0F008E5934 /* Lantinghei.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,15 @@
 		2893C18F1AFB157D008E5934 /* SeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2893C1941AFB157D008E5934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2893C1951AFB157D008E5934 /* SeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeedTests.m; sourceTree = "<group>"; };
+		2893C1A01AFB15BA008E5934 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		2893C1A11AFB15BA008E5934 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		2893C1A31AFB15D1008E5934 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		2893C1A41AFB15D1008E5934 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		2893C1A61AFB15E8008E5934 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		2893C1A71AFB15E8008E5934 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		2893C1AD1AFB3354008E5934 /* ZWIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWIntroductionViewController.h; sourceTree = "<group>"; };
+		2893C1AE1AFB3354008E5934 /* ZWIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWIntroductionViewController.m; sourceTree = "<group>"; };
+		2893C1B41AFB7A0F008E5934 /* Lantinghei.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lantinghei.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,8 @@
 		2893C1781AFB157D008E5934 /* Seed */ = {
 			isa = PBXGroup;
 			children = (
+				2893C19F1AFB159F008E5934 /* SSO */,
+				2893C1AC1AFB3329008E5934 /* Library */,
 				2893C17D1AFB157D008E5934 /* AppDelegate.h */,
 				2893C17E1AFB157D008E5934 /* AppDelegate.m */,
 				2893C1801AFB157D008E5934 /* ViewController.h */,
@@ -117,6 +133,31 @@
 				2893C1941AFB157D008E5934 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2893C19F1AFB159F008E5934 /* SSO */ = {
+			isa = PBXGroup;
+			children = (
+				2893C1A01AFB15BA008E5934 /* SignUpViewController.h */,
+				2893C1A11AFB15BA008E5934 /* SignUpViewController.m */,
+				2893C1A31AFB15D1008E5934 /* SignInViewController.h */,
+				2893C1A41AFB15D1008E5934 /* SignInViewController.m */,
+				2893C1A61AFB15E8008E5934 /* ChangePasswordViewController.h */,
+				2893C1A71AFB15E8008E5934 /* ChangePasswordViewController.m */,
+			);
+			name = SSO;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2893C1AC1AFB3329008E5934 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2893C1B41AFB7A0F008E5934 /* Lantinghei.ttc */,
+				2893C1AD1AFB3354008E5934 /* ZWIntroductionViewController.h */,
+				2893C1AE1AFB3354008E5934 /* ZWIntroductionViewController.m */,
+			);
+			name = Library;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +242,7 @@
 			files = (
 				2893C1851AFB157D008E5934 /* Main.storyboard in Resources */,
 				2893C18A1AFB157D008E5934 /* LaunchScreen.xib in Resources */,
+				2893C1B51AFB7A0F008E5934 /* Lantinghei.ttc in Resources */,
 				2893C1871AFB157D008E5934 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +261,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2893C1A51AFB15D1008E5934 /* SignInViewController.m in Sources */,
+				2893C1AF1AFB3354008E5934 /* ZWIntroductionViewController.m in Sources */,
+				2893C1A81AFB15E8008E5934 /* ChangePasswordViewController.m in Sources */,
 				2893C1821AFB157D008E5934 /* ViewController.m in Sources */,
 				2893C17F1AFB157D008E5934 /* AppDelegate.m in Sources */,
+				2893C1A21AFB15BA008E5934 /* SignUpViewController.m in Sources */,
 				2893C17C1AFB157D008E5934 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

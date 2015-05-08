@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "ZWIntroductionViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
+
+@property (strong,nonatomic) ZWIntroductionViewController *introductionView;
 
 @end
 
@@ -16,7 +20,28 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    NSArray *converImageNames = @[@"img_index_01txt", @"img_index_02txt", @"img_index_03txt"];
+    NSArray *backgorundImageNames = @[@"img_index_01bg", @"img_index_02bg", @"img_index_03bg"];
+    NSArray *titleArray = @[@"微信登录",@"注册",@"登录"];
+    
+    self.introductionView = [[ZWIntroductionViewController alloc]initWithCoverImageNames:converImageNames backgroundImageNames:backgorundImageNames buttons:titleArray];
+    
+    [self.window addSubview:self.introductionView.view];
+    
+    __weak AppDelegate *weakSelf = self;
+    
+    self.introductionView.didSelectedEnter = ^(){
+        [weakSelf.introductionView.view removeFromSuperview];
+        weakSelf.introductionView = nil;
+        
+        UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        
+        weakSelf.window.rootViewController = [main instantiateInitialViewController];
+        [weakSelf.window makeKeyAndVisible];
+    };
+    
     return YES;
 }
 
