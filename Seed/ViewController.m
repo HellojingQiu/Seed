@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    UITextField *text = [[UITextField alloc]initWithFrame:[UIScreen mainScreen].bounds];
 }
 
 - (void)didReceiveMemoryWarning {

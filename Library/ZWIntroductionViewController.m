@@ -115,6 +115,7 @@
             button.layer.borderWidth = 1;
             
             button.alpha = 0;
+            button.tag = 1001+buttonCount;
             
             [button addTarget:self action:@selector(enter:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -313,7 +314,7 @@
 
 - (void)enter:(id)object
 {
-    self.didSelectedEnter();
+    self.didSelectedEnter(object);
 }
 
 - (void)didReceiveMemoryWarning {

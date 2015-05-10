@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284F973B1AFF3AF4000843F6 /* Lantinghei.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 284F96DA1AFF3AF3000843F6 /* Lantinghei.ttc */; };
+		284F975B1AFF3AF4000843F6 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F97021AFF3AF4000843F6 /* libWeiboSDK.a */; };
+		284F975C1AFF3AF4000843F6 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 284F970A1AFF3AF4000843F6 /* WeiboSDK.bundle */; };
+		284F97721AFF3AF4000843F6 /* ZWIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284F973A1AFF3AF4000843F6 /* ZWIntroductionViewController.m */; };
+		284F97881AFF3CB5000843F6 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284F97831AFF3CB5000843F6 /* ChangePasswordViewController.m */; };
+		284F97891AFF3CB5000843F6 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284F97851AFF3CB5000843F6 /* SignInViewController.m */; };
+		284F978A1AFF3CB5000843F6 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284F97871AFF3CB5000843F6 /* SignUpViewController.m */; };
+		284F97A01AFF4844000843F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F978C1AFF4187000843F6 /* QuartzCore.framework */; };
+		284F97A11AFF484C000843F6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F978E1AFF4190000843F6 /* ImageIO.framework */; };
+		284F97A21AFF4855000843F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F97901AFF4199000843F6 /* SystemConfiguration.framework */; };
+		284F97A31AFF485D000843F6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F97921AFF41A0000843F6 /* Security.framework */; };
+		284F97A41AFF4863000843F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F97981AFF41C0000843F6 /* UIKit.framework */; };
+		284F97A51AFF486A000843F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F979A1AFF41C8000843F6 /* Foundation.framework */; };
+		284F97A61AFF4873000843F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F979C1AFF41D1000843F6 /* CoreGraphics.framework */; };
 		2893C17C1AFB157D008E5934 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C17B1AFB157D008E5934 /* main.m */; };
 		2893C17F1AFB157D008E5934 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C17E1AFB157D008E5934 /* AppDelegate.m */; };
 		2893C1821AFB157D008E5934 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1811AFB157D008E5934 /* ViewController.m */; };
@@ -14,11 +28,6 @@
 		2893C1871AFB157D008E5934 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2893C1861AFB157D008E5934 /* Images.xcassets */; };
 		2893C18A1AFB157D008E5934 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2893C1881AFB157D008E5934 /* LaunchScreen.xib */; };
 		2893C1961AFB157D008E5934 /* SeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1951AFB157D008E5934 /* SeedTests.m */; };
-		2893C1A21AFB15BA008E5934 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1A11AFB15BA008E5934 /* SignUpViewController.m */; };
-		2893C1A51AFB15D1008E5934 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1A41AFB15D1008E5934 /* SignInViewController.m */; };
-		2893C1A81AFB15E8008E5934 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1A71AFB15E8008E5934 /* ChangePasswordViewController.m */; };
-		2893C1AF1AFB3354008E5934 /* ZWIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1AE1AFB3354008E5934 /* ZWIntroductionViewController.m */; };
-		2893C1B51AFB7A0F008E5934 /* Lantinghei.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 2893C1B41AFB7A0F008E5934 /* Lantinghei.ttc */; };
 		9691F217592B0696E7861729 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C972ACF5A8F44C230DE5A3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +42,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		284F96DA1AFF3AF3000843F6 /* Lantinghei.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Lantinghei.ttc; path = Library/Lantinghei.ttc; sourceTree = "<group>"; };
+		284F97021AFF3AF4000843F6 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		284F97031AFF3AF4000843F6 /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		284F97041AFF3AF4000843F6 /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+		284F97051AFF3AF4000843F6 /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		284F97061AFF3AF4000843F6 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		284F97071AFF3AF4000843F6 /* WBSDKBasicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKBasicButton.h; sourceTree = "<group>"; };
+		284F97081AFF3AF4000843F6 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKCommentButton.h; sourceTree = "<group>"; };
+		284F97091AFF3AF4000843F6 /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		284F970A1AFF3AF4000843F6 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		284F970B1AFF3AF4000843F6 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		284F970C1AFF3AF4000843F6 /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		284F97391AFF3AF4000843F6 /* ZWIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZWIntroductionViewController.h; path = Library/ZWIntroductionViewController.h; sourceTree = "<group>"; };
+		284F973A1AFF3AF4000843F6 /* ZWIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZWIntroductionViewController.m; path = Library/ZWIntroductionViewController.m; sourceTree = "<group>"; };
+		284F97821AFF3CB5000843F6 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangePasswordViewController.h; path = SSO/Controller/SSO/ChangePasswordViewController.h; sourceTree = "<group>"; };
+		284F97831AFF3CB5000843F6 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangePasswordViewController.m; path = SSO/Controller/SSO/ChangePasswordViewController.m; sourceTree = "<group>"; };
+		284F97841AFF3CB5000843F6 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignInViewController.h; path = SSO/Controller/SSO/SignInViewController.h; sourceTree = "<group>"; };
+		284F97851AFF3CB5000843F6 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = SSO/Controller/SSO/SignInViewController.m; sourceTree = "<group>"; };
+		284F97861AFF3CB5000843F6 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = SSO/Controller/SSO/SignUpViewController.h; sourceTree = "<group>"; };
+		284F97871AFF3CB5000843F6 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = SSO/Controller/SSO/SignUpViewController.m; sourceTree = "<group>"; };
+		284F978B1AFF3E7B000843F6 /* Seed-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Seed-Prefix.pch"; sourceTree = "<group>"; };
+		284F978C1AFF4187000843F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		284F978E1AFF4190000843F6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		284F97901AFF4199000843F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		284F97921AFF41A0000843F6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		284F97941AFF41AE000843F6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		284F97961AFF41B7000843F6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		284F97981AFF41C0000843F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		284F979A1AFF41C8000843F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		284F979C1AFF41D1000843F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2893C1761AFB157D008E5934 /* Seed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2893C17A1AFB157D008E5934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2893C17B1AFB157D008E5934 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,15 +85,6 @@
 		2893C18F1AFB157D008E5934 /* SeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2893C1941AFB157D008E5934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2893C1951AFB157D008E5934 /* SeedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeedTests.m; sourceTree = "<group>"; };
-		2893C1A01AFB15BA008E5934 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
-		2893C1A11AFB15BA008E5934 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		2893C1A31AFB15D1008E5934 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
-		2893C1A41AFB15D1008E5934 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
-		2893C1A61AFB15E8008E5934 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
-		2893C1A71AFB15E8008E5934 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
-		2893C1AD1AFB3354008E5934 /* ZWIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWIntroductionViewController.h; sourceTree = "<group>"; };
-		2893C1AE1AFB3354008E5934 /* ZWIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWIntroductionViewController.m; sourceTree = "<group>"; };
-		2893C1B41AFB7A0F008E5934 /* Lantinghei.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lantinghei.ttc; sourceTree = "<group>"; };
 		3EEB634A79FBD2A3F93C38FA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3FB4535B1BE85CC6D11B3AF1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C6C972ACF5A8F44C230DE5A3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +95,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284F97A61AFF4873000843F6 /* CoreGraphics.framework in Frameworks */,
+				284F97A51AFF486A000843F6 /* Foundation.framework in Frameworks */,
+				284F97A41AFF4863000843F6 /* UIKit.framework in Frameworks */,
+				284F97A31AFF485D000843F6 /* Security.framework in Frameworks */,
+				284F97A21AFF4855000843F6 /* SystemConfiguration.framework in Frameworks */,
+				284F97A11AFF484C000843F6 /* ImageIO.framework in Frameworks */,
+				284F97A01AFF4844000843F6 /* QuartzCore.framework in Frameworks */,
 				9691F217592B0696E7861729 /* libPods.a in Frameworks */,
+				284F975B1AFF3AF4000843F6 /* libWeiboSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +117,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		284F97011AFF3AF4000843F6 /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				284F97021AFF3AF4000843F6 /* libWeiboSDK.a */,
+				284F97031AFF3AF4000843F6 /* WBHttpRequest+WeiboShare.h */,
+				284F97041AFF3AF4000843F6 /* WBHttpRequest+WeiboToken.h */,
+				284F97051AFF3AF4000843F6 /* WBHttpRequest+WeiboUser.h */,
+				284F97061AFF3AF4000843F6 /* WBHttpRequest.h */,
+				284F97071AFF3AF4000843F6 /* WBSDKBasicButton.h */,
+				284F97081AFF3AF4000843F6 /* WBSDKCommentButton.h */,
+				284F97091AFF3AF4000843F6 /* WBSDKRelationshipButton.h */,
+				284F970A1AFF3AF4000843F6 /* WeiboSDK.bundle */,
+				284F970B1AFF3AF4000843F6 /* WeiboSDK.h */,
+				284F970C1AFF3AF4000843F6 /* WeiboUser.h */,
+			);
+			name = libWeiboSDK;
+			path = Library/weibo_ios_sdk/libWeiboSDK;
+			sourceTree = "<group>";
+		};
+		284F977F1AFF3C1E000843F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		284F97801AFF3C36000843F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		284F97811AFF3C3E000843F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2893C19F1AFB159F008E5934 /* SSO */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		2893C16D1AFB157D008E5934 = {
 			isa = PBXGroup;
 			children = (
 				2893C1781AFB157D008E5934 /* Seed */,
 				2893C1921AFB157D008E5934 /* SeedTests */,
 				2893C1771AFB157D008E5934 /* Products */,
+				284F978B1AFF3E7B000843F6 /* Seed-Prefix.pch */,
 				70B5D740CDC16B1FE107FA91 /* Pods */,
 				D4C2F9AB3D3032E915C6E7AE /* Frameworks */,
 			);
@@ -102,7 +182,9 @@
 		2893C1781AFB157D008E5934 /* Seed */ = {
 			isa = PBXGroup;
 			children = (
-				2893C19F1AFB159F008E5934 /* SSO */,
+				284F97811AFF3C3E000843F6 /* Controller */,
+				284F97801AFF3C36000843F6 /* View */,
+				284F977F1AFF3C1E000843F6 /* Model */,
 				2893C1AC1AFB3329008E5934 /* Library */,
 				2893C17D1AFB157D008E5934 /* AppDelegate.h */,
 				2893C17E1AFB157D008E5934 /* AppDelegate.m */,
@@ -145,12 +227,12 @@
 		2893C19F1AFB159F008E5934 /* SSO */ = {
 			isa = PBXGroup;
 			children = (
-				2893C1A01AFB15BA008E5934 /* SignUpViewController.h */,
-				2893C1A11AFB15BA008E5934 /* SignUpViewController.m */,
-				2893C1A31AFB15D1008E5934 /* SignInViewController.h */,
-				2893C1A41AFB15D1008E5934 /* SignInViewController.m */,
-				2893C1A61AFB15E8008E5934 /* ChangePasswordViewController.h */,
-				2893C1A71AFB15E8008E5934 /* ChangePasswordViewController.m */,
+				284F97821AFF3CB5000843F6 /* ChangePasswordViewController.h */,
+				284F97831AFF3CB5000843F6 /* ChangePasswordViewController.m */,
+				284F97841AFF3CB5000843F6 /* SignInViewController.h */,
+				284F97851AFF3CB5000843F6 /* SignInViewController.m */,
+				284F97861AFF3CB5000843F6 /* SignUpViewController.h */,
+				284F97871AFF3CB5000843F6 /* SignUpViewController.m */,
 			);
 			name = SSO;
 			path = ..;
@@ -159,9 +241,10 @@
 		2893C1AC1AFB3329008E5934 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				2893C1B41AFB7A0F008E5934 /* Lantinghei.ttc */,
-				2893C1AD1AFB3354008E5934 /* ZWIntroductionViewController.h */,
-				2893C1AE1AFB3354008E5934 /* ZWIntroductionViewController.m */,
+				284F97011AFF3AF4000843F6 /* libWeiboSDK */,
+				284F96DA1AFF3AF3000843F6 /* Lantinghei.ttc */,
+				284F97391AFF3AF4000843F6 /* ZWIntroductionViewController.h */,
+				284F973A1AFF3AF4000843F6 /* ZWIntroductionViewController.m */,
 			);
 			name = Library;
 			path = ..;
@@ -179,6 +262,15 @@
 		D4C2F9AB3D3032E915C6E7AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				284F979C1AFF41D1000843F6 /* CoreGraphics.framework */,
+				284F979A1AFF41C8000843F6 /* Foundation.framework */,
+				284F97981AFF41C0000843F6 /* UIKit.framework */,
+				284F97961AFF41B7000843F6 /* CoreText.framework */,
+				284F97941AFF41AE000843F6 /* CoreTelephony.framework */,
+				284F97921AFF41A0000843F6 /* Security.framework */,
+				284F97901AFF4199000843F6 /* SystemConfiguration.framework */,
+				284F978E1AFF4190000843F6 /* ImageIO.framework */,
+				284F978C1AFF4187000843F6 /* QuartzCore.framework */,
 				C6C972ACF5A8F44C230DE5A3 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -249,6 +341,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 2893C16D1AFB157D008E5934;
 			productRefGroup = 2893C1771AFB157D008E5934 /* Products */;
@@ -268,8 +361,9 @@
 			files = (
 				2893C1851AFB157D008E5934 /* Main.storyboard in Resources */,
 				2893C18A1AFB157D008E5934 /* LaunchScreen.xib in Resources */,
-				2893C1B51AFB7A0F008E5934 /* Lantinghei.ttc in Resources */,
+				284F973B1AFF3AF4000843F6 /* Lantinghei.ttc in Resources */,
 				2893C1871AFB157D008E5934 /* Images.xcassets in Resources */,
+				284F975C1AFF3AF4000843F6 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,12 +414,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2893C1A51AFB15D1008E5934 /* SignInViewController.m in Sources */,
-				2893C1AF1AFB3354008E5934 /* ZWIntroductionViewController.m in Sources */,
-				2893C1A81AFB15E8008E5934 /* ChangePasswordViewController.m in Sources */,
 				2893C1821AFB157D008E5934 /* ViewController.m in Sources */,
 				2893C17F1AFB157D008E5934 /* AppDelegate.m in Sources */,
-				2893C1A21AFB15BA008E5934 /* SignUpViewController.m in Sources */,
+				284F97721AFF3AF4000843F6 /* ZWIntroductionViewController.m in Sources */,
+				284F97881AFF3CB5000843F6 /* ChangePasswordViewController.m in Sources */,
+				284F97891AFF3CB5000843F6 /* SignInViewController.m in Sources */,
+				284F978A1AFF3CB5000843F6 /* SignUpViewController.m in Sources */,
 				2893C17C1AFB157D008E5934 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,9 +547,18 @@
 			baseConfigurationReference = 3FB4535B1BE85CC6D11B3AF1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Seed/Seed-Prefix.pch";
 				INFOPLIST_FILE = Seed/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/weibo_ios_sdk/libWeiboSDK",
+					"$(PROJECT_DIR)/weibo_ios_sdk/WeiboSDKDemo/libWeiboSDK",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/weibo_ios_sdk/libWeiboSDK",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/weibo_ios_sdk/WeiboSDKDemo/libWeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -465,9 +568,18 @@
 			baseConfigurationReference = 3EEB634A79FBD2A3F93C38FA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Seed/Seed-Prefix.pch";
 				INFOPLIST_FILE = Seed/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/weibo_ios_sdk/libWeiboSDK",
+					"$(PROJECT_DIR)/weibo_ios_sdk/WeiboSDKDemo/libWeiboSDK",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/weibo_ios_sdk/libWeiboSDK",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/weibo_ios_sdk/WeiboSDKDemo/libWeiboSDK",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -480,6 +592,8 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -487,8 +601,20 @@
 				INFOPLIST_FILE = SeedTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/weibo_ios_sdk/libWeiboSDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seed.app/Seed";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -500,11 +626,24 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = SeedTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)/weibo_ios_sdk/libWeiboSDK",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Seed.app/Seed";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^DidSelectedEnter)();
+typedef void (^DidSelectedEnter)(id sender);
 
 @interface ZWIntroductionViewController : UIViewController
 

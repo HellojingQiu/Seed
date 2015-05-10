@@ -10,9 +10,10 @@
 #import "ZWIntroductionViewController.h"
 #import "ViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<WeiboSDKDelegate>
 
 @property (strong,nonatomic) ZWIntroductionViewController *introductionView;
+@property (strong,nonatomic) WeiboSDK *weiboSDK;
 
 @end
 
@@ -21,28 +22,94 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self registerApp];
+    [self initIntroductionViewController];
+    
+    
+    return YES;
+}
+
+-(BOOL)registerApp{
+    [WeiboSDK enableDebugMode:YES];
+    return [WeiboSDK registerApp:kWeiboAPPkey];
+    
+}
+
+#pragma mark - schemes URL
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [WeiboSDK handleOpenURL:url
+                          delegate:self];
+}
+
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [WeiboSDK handleOpenURL:url
+                          delegate:self];
+}
+
+-(void)ssoButtonPressed {
+    WBAuthorizeRequest *request = [WBAuthorizeRequest request];
+    request.redirectURI = kRedirectURI;
+    request.scope = @"all";
+    request.userInfo = @{@""};
+    
+}
+
+#pragma mark WeiboSDKDelegate function
+
+-(void)didReceiveWeiboRequest:(WBBaseRequest *)request{
+    
+}
+
+-(void)didReceiveWeiboResponse:(WBBaseResponse *)response{
+    
+}
+
+#pragma mark - init introduct view controller
+
+-(void)initIntroductionViewController{
     
     NSArray *converImageNames = @[@"img_index_01txt", @"img_index_02txt", @"img_index_03txt"];
     NSArray *backgorundImageNames = @[@"img_index_01bg", @"img_index_02bg", @"img_index_03bg"];
     NSArray *titleArray = @[@"微信登录",@"注册",@"登录"];
     
-    self.introductionView = [[ZWIntroductionViewController alloc]initWithCoverImageNames:converImageNames backgroundImageNames:backgorundImageNames buttons:titleArray];
+    self.introductionView = [[ZWIntroductionViewController alloc] initWithCoverImageNames:converImageNames
+                                                                     backgroundImageNames:backgorundImageNames
+                                                                                  buttons:titleArray];
     
     [self.window addSubview:self.introductionView.view];
     
     __weak AppDelegate *weakSelf = self;
     
-    self.introductionView.didSelectedEnter = ^(){
+    self.introductionView.didSelectedEnter = ^(id sender){
         [weakSelf.introductionView.view removeFromSuperview];
         weakSelf.introductionView = nil;
         
         UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         
+        
         weakSelf.window.rootViewController = [main instantiateInitialViewController];
+        
+        if ([sender isKindOfClass:[UIButton class]]) {
+            UIButton *button = (UIButton *)sender;
+            switch (button.tag) {
+                case 1001:
+                    [weakSelf ssoButtonPressed];
+                    break;
+                case 1002:
+                    weakSelf.window.rootViewController = [main instantiateViewControllerWithIdentifier:@"SignUpViewController"];
+                    break;
+                case 1003:
+                    weakSelf.window.rootViewController = [main instantiateViewControllerWithIdentifier:@"SignInViewController"];
+                    break;
+                default:
+                    NSLog(@"button tag fault");
+                    break;
+            }
+        }
+        
         [weakSelf.window makeKeyAndVisible];
     };
-    
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
