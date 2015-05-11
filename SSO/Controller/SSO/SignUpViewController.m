@@ -66,6 +66,9 @@
         NSDictionary *dict = @{@"phoneid" : _textFieldPhoneNumber.text,@"countryCode" : @([_textFieldCityCode.text substringFromIndex:1].intValue)};
         
         __weak AFHTTPRequestOperationManager *weakManager = _manager;
+        
+        NSString *str = [NSString stringWithFormat:@"%@%@",URLRoot,@"getvcode"];
+        
         [weakManager POST:URLGetVerificationCode parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
             NSLog(@"%@",responseObject);
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
