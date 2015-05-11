@@ -7,6 +7,7 @@
 //
 
 #import "SignUpViewController.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface SignUpViewController ()<UITextFieldDelegate>{
     UITableView *_tableViewCityList;
@@ -14,20 +15,28 @@
     BOOL _showList;
     CGFloat _heightTable;
     CGFloat _heightFrame;
+    
+    NSInteger _coolDown;
+    NSTimer *_coolDownTimer;
 }
 @property (weak, nonatomic) IBOutlet UITextField *textFieldVaild;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldCityCode;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPhoneNumber;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSubmit;
+@property (weak, nonatomic) IBOutlet UIButton *buttonValid;
+
+@property (strong,nonatomic) AFHTTPRequestOperationManager *manager;
+
+@property (strong,nonatomic) NSString *validCode;
+
+
 @end
 
 @implementation SignUpViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.layer.masksToBounds
-//    self.view.layer.cornerRadius
     // Do any additional setup after loading the view.
     
 }
@@ -37,8 +46,65 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark Valid Flow
+
+- (IBAction)ActionGetValidCode:(id)sender {
+    if (!_manager) [self initAFRequestmanager];
+    _buttonValid.enabled = NO;
+    _coolDown = 30;
+    _coolDownTimer =[NSTimer scheduledTimerWithTimeInterval:1.0
+                                                     target:self
+                                                   selector:@selector(verifyCooldown:)
+                                                   userInfo:self repeats:YES];
+    
+    [_buttonValid setTitle:[NSString stringWithFormat:@"发送验证码(%ld)",_coolDown] forState:UIControlStateNormal];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        NSDictionary *paramaters = @{@"phoneid" : _textFieldPhoneNumber.text,
+//                                     @"countryCode￼" : @([_textFieldCityCode.text substringFromIndex:1].intValue)
+//                                     };
+        NSDictionary *dict = @{@"phoneid" : _textFieldPhoneNumber.text,@"countryCode" : @([_textFieldCityCode.text substringFromIndex:1].intValue)};
+        
+        __weak AFHTTPRequestOperationManager *weakManager = _manager;
+        [weakManager POST:URLGetVerificationCode parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            NSLog(@"%@",responseObject);
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"%@",error);
+        }];
+    });
+    
+//    NSDictionary *parameters = @{@"phoneId"};
+}
+
+-(void)verifyCooldown:(NSTimer *)timer{
+    if (--_coolDown) {
+        [_buttonValid setTitle:[NSString stringWithFormat:@"发送验证码(%ld)",_coolDown] forState:UIControlStateNormal];
+    }else{
+        [_coolDownTimer invalidate];
+        _coolDownTimer = nil;
+        
+        [_buttonValid setTitle:[NSString stringWithFormat:@"发送验证码"] forState:UIControlStateNormal];
+        _buttonValid.enabled = YES;
+    }
+}
+
 - (IBAction)ActionSubmit:(id)sender {
-    NSLog(@"submit succeess!");
+    //如果接受类型不一致,请替换一直text/html或别的类型
+//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+    [self ActionGetValidCode:nil];
+    
+    NSDictionary *parameters = @{@"countryCode" : _textFieldCityCode.text,
+                                 @"phoneid" : _textFieldPhoneNumber.text,
+                                 @"password" : _textFieldPassword.text
+                                 };
+}
+
+-(void)initAFRequestmanager{
+    _manager = [AFHTTPRequestOperationManager manager];
+    //申明返回的结果是json类型
+    _manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    //申明请求的数据室json类型
+    _manager.requestSerializer = [AFJSONRequestSerializer serializer];
 }
 
 #pragma mark - Touch

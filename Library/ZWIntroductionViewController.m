@@ -63,6 +63,7 @@
     self.pagingScrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     self.pagingScrollView.delegate = self;
     self.pagingScrollView.pagingEnabled = YES;
+    self.pagingScrollView.bounces = NO;
     self.pagingScrollView.showsHorizontalScrollIndicator = NO;
     
     [self.view addSubview:self.pagingScrollView];
@@ -115,7 +116,7 @@
             button.layer.borderWidth = 1;
             
             button.alpha = 0;
-            button.tag = 1001+buttonCount;
+            button.tag = 1000+buttonCount;
             
             [button addTarget:self action:@selector(enter:) forControlEvents:UIControlEventTouchUpInside];
             
@@ -205,7 +206,7 @@
 {
     if ([scrollView.panGestureRecognizer translationInView:scrollView.superview].x < 0) {
         if (![self hasNext:self.pageControl]) {
-            [self enter:nil];
+//            [self enter:nil];
         }
     }
 }

@@ -51,8 +51,14 @@
     WBAuthorizeRequest *request = [WBAuthorizeRequest request];
     request.redirectURI = kRedirectURI;
     request.scope = @"all";
-    request.userInfo = @{@""};
+    request.userInfo = @{@"SSO_From": @"AppDelegate",
+                         @"Other_Info": @"Seed"};
     
+    [WeiboSDK sendRequest:request];
+//    request.userInfo = @{@"SSO_From": @"SendMessageToWeiboViewController",
+//                         @"Other_Info_1": [NSNumber numberWithInt:123],
+//                         @"Other_Info_2": @[@"obj1", @"obj2"],
+//                         @"Other_Info_3": @{@"key1": @"obj1", @"key2": @"obj2"}};
 }
 
 #pragma mark WeiboSDKDelegate function
@@ -62,7 +68,26 @@
 }
 
 -(void)didReceiveWeiboResponse:(WBBaseResponse *)response{
-    
+    if ([response isKindOfClass:[WBSendMessageToWeiboResponse class]]) {
+        NSString *message = [NSString stringWithFormat:@"%@:%ld\n%@: %@\n%@: %@",@"响应状态",(long)response.statusCode,@"相应UserInfo数据",response.userInfo,@"原请求UserInfo数据",response.requestUserInfo];
+        
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"WBSendMessageToWeiboResponse" message:message preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:action];
+        
+        [self.window.rootViewController presentViewController:alertController animated:YES completion:nil];
+    }else if ([response isKindOfClass:[WBAuthorizeResponse class]]){
+        NSString *message = [NSString stringWithFormat:@"%@: %d\nresponse.userId: %@\nresponse.accessToken: %@\n%@: %@\n%@: %@", NSLocalizedString(@"响应状态", nil), (int)response.statusCode,[(WBAuthorizeResponse *)response userID], [(WBAuthorizeResponse *)response accessToken],  NSLocalizedString(@"响应UserInfo数据", nil), response.userInfo, NSLocalizedString(@"原请求UserInfo数据", nil), response.requestUserInfo];
+        
+        UIAlertController *alertViewController = [UIAlertController alertControllerWithTitle:@"WBAuthorizeResponse" message:message preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+        [alertViewController addAction:action];
+        
+        self.wbtoken = [(WBAuthorizeResponse *)response accessToken];
+        self.wbCurrentUserID = [(WBAuthorizeResponse *)response userID];
+        
+        [self.window.rootViewController presentViewController:alertViewController animated:YES completion:nil];
+    }
 }
 
 #pragma mark - init introduct view controller
@@ -82,8 +107,6 @@
     __weak AppDelegate *weakSelf = self;
     
     self.introductionView.didSelectedEnter = ^(id sender){
-        [weakSelf.introductionView.view removeFromSuperview];
-        weakSelf.introductionView = nil;
         
         UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
         
@@ -109,6 +132,9 @@
         }
         
         [weakSelf.window makeKeyAndVisible];
+        
+        [weakSelf.introductionView.view removeFromSuperview];
+        weakSelf.introductionView = nil;
     };
 }
 

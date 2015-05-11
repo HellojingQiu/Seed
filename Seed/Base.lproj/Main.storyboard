@@ -22,7 +22,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="gp6-HJ-Dyh">
             <objects>
-                <viewController id="aPt-ja-Z6l" customClass="SignUpViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="aPt-ja-Z6l" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bOE-U4-aAw"/>
                         <viewControllerLayoutGuide type="bottom" id="hBp-5a-mCt"/>
@@ -54,6 +54,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ActionGetValidCode:" destination="aPt-ja-Z6l" eventType="touchUpInside" id="Ppq-Sm-lbm"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456789" placeholder="登录密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wvw-dr-nKV" userLabel="PasswordTextField">
                                 <rect key="frame" x="73" y="275" width="454" height="44"/>
@@ -183,6 +186,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonSubmit" destination="cnQ-9f-o0J" id="4vM-g0-ndo"/>
+                        <outlet property="buttonValid" destination="35E-CI-RnI" id="LfU-he-G4p"/>
                         <outlet property="textFieldCityCode" destination="dpi-zg-huQ" id="Opm-Q2-faB"/>
                         <outlet property="textFieldPassword" destination="Wvw-dr-nKV" id="5BC-H5-CSl"/>
                         <outlet property="textFieldPhoneNumber" destination="LF1-4S-ZIq" id="veU-gv-oIo"/>
@@ -196,7 +200,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="EmT-ar-Flx">
             <objects>
-                <viewController id="zQM-Wr-iKc" customClass="SignInViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="zQM-Wr-iKc" customClass="SignInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6bK-AE-NsO"/>
                         <viewControllerLayoutGuide type="bottom" id="ybd-y0-yc8"/>
@@ -376,7 +380,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>

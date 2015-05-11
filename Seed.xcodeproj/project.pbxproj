@@ -62,7 +62,7 @@
 		284F97851AFF3CB5000843F6 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignInViewController.m; path = SSO/Controller/SSO/SignInViewController.m; sourceTree = "<group>"; };
 		284F97861AFF3CB5000843F6 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = SSO/Controller/SSO/SignUpViewController.h; sourceTree = "<group>"; };
 		284F97871AFF3CB5000843F6 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = SSO/Controller/SSO/SignUpViewController.m; sourceTree = "<group>"; };
-		284F978B1AFF3E7B000843F6 /* Seed-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Seed-Prefix.pch"; sourceTree = "<group>"; };
+		284F978B1AFF3E7B000843F6 /* Seed-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Seed-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		284F978C1AFF4187000843F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		284F978E1AFF4190000843F6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		284F97901AFF4199000843F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -164,7 +164,6 @@
 				2893C1781AFB157D008E5934 /* Seed */,
 				2893C1921AFB157D008E5934 /* SeedTests */,
 				2893C1771AFB157D008E5934 /* Products */,
-				284F978B1AFF3E7B000843F6 /* Seed-Prefix.pch */,
 				70B5D740CDC16B1FE107FA91 /* Pods */,
 				D4C2F9AB3D3032E915C6E7AE /* Frameworks */,
 			);
@@ -201,6 +200,7 @@
 		2893C1791AFB157D008E5934 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				284F978B1AFF3E7B000843F6 /* Seed-Prefix.pch */,
 				2893C17A1AFB157D008E5934 /* Info.plist */,
 				2893C17B1AFB157D008E5934 /* main.m */,
 			);
