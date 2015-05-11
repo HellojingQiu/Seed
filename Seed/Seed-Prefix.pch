@@ -1,0 +1,29 @@
+//
+//  Seed-Prefix.pch
+//  Seed
+//
+//  Created by OliHire-HellowJingQiu on 15/5/11.
+//  Copyright (c) 2015年 OliHire-JokerV. All rights reserved.
+//
+
+#ifndef Seed_Seed_Prefix_pch
+#define Seed_Seed_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import
+
+#define k
+
+//Weibo
+#define kAppKey         @"1527157877"
+#define kRedirectURI    @"http://www.baidu.com"
+
+
+#define URLRoot "http://seed.i.codyee.com/"
+#define URLGetVaildCode [NSString stringWithFormat:@"%@%@",URLRoot,@"getvcode"]
+#define URLSignIn [NSString stringWithFormat:@"%@%@",URLRoot,@"user/signin"]
+#define URLSignUp [NSString stringWithFormat:@"%@%@",URLRoot,@"user/signup"]
+#define URLSignOut [NSString stringWithFormat:@"%@%@",URLRoot,@"user/signout"]
+
+#endif
