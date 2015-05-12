@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283C5A121B01902B0018F80B /* OptionPublic.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A111B01902B0018F80B /* OptionPublic.m */; };
+		283C5A2A1B01AABB0018F80B /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A241B01AABB0018F80B /* UIImage+Blur.m */; };
+		283C5A2B1B01AABB0018F80B /* UIImage+ImageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A261B01AABB0018F80B /* UIImage+ImageWithColor.m */; };
+		283C5A2C1B01AABB0018F80B /* UIImage+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A281B01AABB0018F80B /* UIImage+Screenshot.m */; };
+		283C5A2F1B01AAF10018F80B /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A2E1B01AAF10018F80B /* MessageViewController.m */; };
+		283C5A351B01AB260018F80B /* TheWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A341B01AB260018F80B /* TheWorldViewController.m */; };
+		283C5A381B01AB560018F80B /* FriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A371B01AB560018F80B /* FriendListViewController.m */; };
+		283C5A3B1B01AB6F0018F80B /* PropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A3A1B01AB6F0018F80B /* PropViewController.m */; };
+		283C5A3E1B01AB870018F80B /* PollenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A3D1B01AB870018F80B /* PollenViewController.m */; };
+		283C5A411B01B1FF0018F80B /* AIMTableViewIndexBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A401B01B1FF0018F80B /* AIMTableViewIndexBar.m */; };
+		283C5A471B01CB610018F80B /* FriendListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 283C5A451B01CB610018F80B /* FriendListTableViewCell.xib */; };
+		283C5A4A1B01D1F70018F80B /* IMGActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A491B01D1F70018F80B /* IMGActivityIndicator.m */; };
+		283C5A581B01F2E00018F80B /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A571B01F2E00018F80B /* ChineseString.m */; };
+		283C5A5B1B01F9D70018F80B /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 283C5A591B01F9D70018F80B /* pinyin.c */; };
 		284F973B1AFF3AF4000843F6 /* Lantinghei.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 284F96DA1AFF3AF3000843F6 /* Lantinghei.ttc */; };
 		284F97721AFF3AF4000843F6 /* ZWIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284F973A1AFF3AF4000843F6 /* ZWIntroductionViewController.m */; };
 		284F97881AFF3CB5000843F6 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284F97831AFF3CB5000843F6 /* ChangePasswordViewController.m */; };
@@ -21,6 +35,7 @@
 		284F97A61AFF4873000843F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 284F979C1AFF41D1000843F6 /* CoreGraphics.framework */; };
 		286CE33B1B006A8100ACD24D /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CE3301B006A8100ACD24D /* libWeiboSDK.a */; };
 		286CE33C1B006A8100ACD24D /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 286CE3381B006A8100ACD24D /* WeiboSDK.bundle */; };
+		286CE3461B0092C000ACD24D /* JKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 286CE3451B0092C000ACD24D /* JKRootViewController.m */; };
 		2893C17C1AFB157D008E5934 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C17B1AFB157D008E5934 /* main.m */; };
 		2893C17F1AFB157D008E5934 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C17E1AFB157D008E5934 /* AppDelegate.m */; };
 		2893C1821AFB157D008E5934 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2893C1811AFB157D008E5934 /* ViewController.m */; };
@@ -42,6 +57,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		283C5A101B01902B0018F80B /* OptionPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionPublic.h; path = Library/OptionPublic.h; sourceTree = "<group>"; };
+		283C5A111B01902B0018F80B /* OptionPublic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionPublic.m; path = Library/OptionPublic.m; sourceTree = "<group>"; };
+		283C5A231B01AABB0018F80B /* UIImage+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blur.h"; sourceTree = "<group>"; };
+		283C5A241B01AABB0018F80B /* UIImage+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blur.m"; sourceTree = "<group>"; };
+		283C5A251B01AABB0018F80B /* UIImage+ImageWithColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithColor.h"; sourceTree = "<group>"; };
+		283C5A261B01AABB0018F80B /* UIImage+ImageWithColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithColor.m"; sourceTree = "<group>"; };
+		283C5A271B01AABB0018F80B /* UIImage+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Screenshot.h"; sourceTree = "<group>"; };
+		283C5A281B01AABB0018F80B /* UIImage+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Screenshot.m"; sourceTree = "<group>"; };
+		283C5A291B01AABB0018F80B /* UIImage-Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Helpers.h"; sourceTree = "<group>"; };
+		283C5A2D1B01AAF10018F80B /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageViewController.h; path = Main/MessageViewController.h; sourceTree = "<group>"; };
+		283C5A2E1B01AAF10018F80B /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageViewController.m; path = Main/MessageViewController.m; sourceTree = "<group>"; };
+		283C5A331B01AB260018F80B /* TheWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheWorldViewController.h; path = Main/TheWorldViewController.h; sourceTree = "<group>"; };
+		283C5A341B01AB260018F80B /* TheWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheWorldViewController.m; path = Main/TheWorldViewController.m; sourceTree = "<group>"; };
+		283C5A361B01AB560018F80B /* FriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendListViewController.h; path = Main/FriendListViewController.h; sourceTree = "<group>"; };
+		283C5A371B01AB560018F80B /* FriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendListViewController.m; path = Main/FriendListViewController.m; sourceTree = "<group>"; };
+		283C5A391B01AB6F0018F80B /* PropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropViewController.h; path = Main/PropViewController.h; sourceTree = "<group>"; };
+		283C5A3A1B01AB6F0018F80B /* PropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropViewController.m; path = Main/PropViewController.m; sourceTree = "<group>"; };
+		283C5A3C1B01AB870018F80B /* PollenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PollenViewController.h; path = Main/PollenViewController.h; sourceTree = "<group>"; };
+		283C5A3D1B01AB870018F80B /* PollenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PollenViewController.m; path = Main/PollenViewController.m; sourceTree = "<group>"; };
+		283C5A3F1B01B1FF0018F80B /* AIMTableViewIndexBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIMTableViewIndexBar.h; path = Library/AIMTableViewIndexBar.h; sourceTree = "<group>"; };
+		283C5A401B01B1FF0018F80B /* AIMTableViewIndexBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIMTableViewIndexBar.m; path = Library/AIMTableViewIndexBar.m; sourceTree = "<group>"; };
+		283C5A451B01CB610018F80B /* FriendListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FriendListTableViewCell.xib; path = Main/FriendListTableViewCell.xib; sourceTree = "<group>"; };
+		283C5A481B01D1F70018F80B /* IMGActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMGActivityIndicator.h; path = Library/libWeiboSDK/IMGActivityIndicator.h; sourceTree = "<group>"; };
+		283C5A491B01D1F70018F80B /* IMGActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMGActivityIndicator.m; path = Library/libWeiboSDK/IMGActivityIndicator.m; sourceTree = "<group>"; };
+		283C5A561B01F2E00018F80B /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		283C5A571B01F2E00018F80B /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		283C5A591B01F9D70018F80B /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pinyin.c; path = Library/pinyin.c; sourceTree = "<group>"; };
+		283C5A5A1B01F9D70018F80B /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pinyin.h; path = Library/pinyin.h; sourceTree = "<group>"; };
 		284F96DA1AFF3AF3000843F6 /* Lantinghei.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Lantinghei.ttc; path = Library/Lantinghei.ttc; sourceTree = "<group>"; };
 		284F97391AFF3AF4000843F6 /* ZWIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZWIntroductionViewController.h; path = Library/ZWIntroductionViewController.h; sourceTree = "<group>"; };
 		284F973A1AFF3AF4000843F6 /* ZWIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZWIntroductionViewController.m; path = Library/ZWIntroductionViewController.m; sourceTree = "<group>"; };
@@ -72,6 +115,8 @@
 		286CE3381B006A8100ACD24D /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
 		286CE3391B006A8100ACD24D /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 		286CE33A1B006A8100ACD24D /* WeiboUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboUser.h; sourceTree = "<group>"; };
+		286CE3441B0092C000ACD24D /* JKRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRootViewController.h; sourceTree = "<group>"; };
+		286CE3451B0092C000ACD24D /* JKRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRootViewController.m; sourceTree = "<group>"; };
 		2893C1761AFB157D008E5934 /* Seed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2893C17A1AFB157D008E5934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2893C17B1AFB157D008E5934 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,9 +162,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		283C5A221B01AABB0018F80B /* UIImage-Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				283C5A231B01AABB0018F80B /* UIImage+Blur.h */,
+				283C5A241B01AABB0018F80B /* UIImage+Blur.m */,
+				283C5A251B01AABB0018F80B /* UIImage+ImageWithColor.h */,
+				283C5A261B01AABB0018F80B /* UIImage+ImageWithColor.m */,
+				283C5A271B01AABB0018F80B /* UIImage+Screenshot.h */,
+				283C5A281B01AABB0018F80B /* UIImage+Screenshot.m */,
+				283C5A291B01AABB0018F80B /* UIImage-Helpers.h */,
+			);
+			name = "UIImage-Helpers";
+			path = "Library/UIImage-Helpers";
+			sourceTree = "<group>";
+		};
+		283C5A421B01CAAE0018F80B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				283C5A361B01AB560018F80B /* FriendListViewController.h */,
+				283C5A371B01AB560018F80B /* FriendListViewController.m */,
+				283C5A2D1B01AAF10018F80B /* MessageViewController.h */,
+				283C5A2E1B01AAF10018F80B /* MessageViewController.m */,
+				283C5A331B01AB260018F80B /* TheWorldViewController.h */,
+				283C5A341B01AB260018F80B /* TheWorldViewController.m */,
+				283C5A391B01AB6F0018F80B /* PropViewController.h */,
+				283C5A3A1B01AB6F0018F80B /* PropViewController.m */,
+				283C5A3C1B01AB870018F80B /* PollenViewController.h */,
+				283C5A3D1B01AB870018F80B /* PollenViewController.m */,
+				283C5A451B01CB610018F80B /* FriendListTableViewCell.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		283C5A4B1B01E31E0018F80B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				283C5A561B01F2E00018F80B /* ChineseString.h */,
+				283C5A571B01F2E00018F80B /* ChineseString.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		284F977F1AFF3C1E000843F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				283C5A4B1B01E31E0018F80B /* Main */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -134,6 +222,9 @@
 		284F97811AFF3C3E000843F6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				283C5A421B01CAAE0018F80B /* Main */,
+				286CE3441B0092C000ACD24D /* JKRootViewController.h */,
+				286CE3451B0092C000ACD24D /* JKRootViewController.m */,
 				2893C19F1AFB159F008E5934 /* SSO */,
 			);
 			name = Controller;
@@ -241,10 +332,19 @@
 		2893C1AC1AFB3329008E5934 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				283C5A221B01AABB0018F80B /* UIImage-Helpers */,
 				286CE32F1B006A8100ACD24D /* libWeiboSDK */,
 				284F96DA1AFF3AF3000843F6 /* Lantinghei.ttc */,
+				283C5A591B01F9D70018F80B /* pinyin.c */,
+				283C5A5A1B01F9D70018F80B /* pinyin.h */,
+				283C5A481B01D1F70018F80B /* IMGActivityIndicator.h */,
+				283C5A491B01D1F70018F80B /* IMGActivityIndicator.m */,
+				283C5A3F1B01B1FF0018F80B /* AIMTableViewIndexBar.h */,
+				283C5A401B01B1FF0018F80B /* AIMTableViewIndexBar.m */,
 				284F97391AFF3AF4000843F6 /* ZWIntroductionViewController.h */,
 				284F973A1AFF3AF4000843F6 /* ZWIntroductionViewController.m */,
+				283C5A101B01902B0018F80B /* OptionPublic.h */,
+				283C5A111B01902B0018F80B /* OptionPublic.m */,
 			);
 			name = Library;
 			path = ..;
@@ -364,6 +464,7 @@
 				284F973B1AFF3AF4000843F6 /* Lantinghei.ttc in Resources */,
 				2893C1871AFB157D008E5934 /* Images.xcassets in Resources */,
 				286CE33C1B006A8100ACD24D /* WeiboSDK.bundle in Resources */,
+				283C5A471B01CB610018F80B /* FriendListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,13 +515,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283C5A2B1B01AABB0018F80B /* UIImage+ImageWithColor.m in Sources */,
+				283C5A2C1B01AABB0018F80B /* UIImage+Screenshot.m in Sources */,
+				283C5A2F1B01AAF10018F80B /* MessageViewController.m in Sources */,
 				2893C1821AFB157D008E5934 /* ViewController.m in Sources */,
+				286CE3461B0092C000ACD24D /* JKRootViewController.m in Sources */,
+				283C5A2A1B01AABB0018F80B /* UIImage+Blur.m in Sources */,
+				283C5A411B01B1FF0018F80B /* AIMTableViewIndexBar.m in Sources */,
+				283C5A381B01AB560018F80B /* FriendListViewController.m in Sources */,
+				283C5A4A1B01D1F70018F80B /* IMGActivityIndicator.m in Sources */,
+				283C5A3E1B01AB870018F80B /* PollenViewController.m in Sources */,
 				2893C17F1AFB157D008E5934 /* AppDelegate.m in Sources */,
 				284F97721AFF3AF4000843F6 /* ZWIntroductionViewController.m in Sources */,
+				283C5A5B1B01F9D70018F80B /* pinyin.c in Sources */,
 				284F97881AFF3CB5000843F6 /* ChangePasswordViewController.m in Sources */,
 				284F97891AFF3CB5000843F6 /* SignInViewController.m in Sources */,
+				283C5A121B01902B0018F80B /* OptionPublic.m in Sources */,
+				283C5A351B01AB260018F80B /* TheWorldViewController.m in Sources */,
 				284F978A1AFF3CB5000843F6 /* SignUpViewController.m in Sources */,
 				2893C17C1AFB157D008E5934 /* main.m in Sources */,
+				283C5A3B1B01AB6F0018F80B /* PropViewController.m in Sources */,
+				283C5A581B01F2E00018F80B /* ChineseString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -117,7 +117,8 @@
             UIButton *button = (UIButton *)sender;
             switch (button.tag) {
                 case 1001:
-                    [weakSelf ssoButtonPressed];
+//                    [weakSelf ssoButtonPressed];
+                    weakSelf.window.rootViewController = [main instantiateInitialViewController];
                     break;
                 case 1002:
                     weakSelf.window.rootViewController = [main instantiateViewControllerWithIdentifier:@"SignUpViewController"];

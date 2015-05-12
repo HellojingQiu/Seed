@@ -75,6 +75,10 @@
     return YES;
 }
 
+-(BOOL)textFieldShouldClear:(UITextField *)textField{
+    _buttonSubmit.enabled = NO;
+    return YES;
+}
 
 /*
 #pragma mark - Navigation

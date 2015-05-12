@@ -94,7 +94,7 @@
 - (IBAction)ActionSubmit:(id)sender {
     //如果接受类型不一致,请替换一直text/html或别的类型
 //    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    [self ActionGetValidCode:nil];
+//    [self ActionGetValidCode:nil];
     
     NSDictionary *parameters = @{@"countryCode" : _textFieldCityCode.text,
                                  @"phoneid" : _textFieldPhoneNumber.text,
@@ -172,6 +172,7 @@
 }
 
 -(BOOL)textFieldShouldClear:(UITextField *)textField{
+    _buttonSubmit.enabled = YES;
     return YES;
 }
 
